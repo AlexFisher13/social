@@ -22,10 +22,17 @@ a:hover {
   color: azure;
 }
 .header a {
-  margin: 10px 20px;
+  margin: 15px 20px;
 }
-.navbar div {
-  margin: 20px 10px;
+.navbar a {
+  padding: 15px 20px 15px 40px;
+}
+.navbar a:hover {
+  background-color: #72797f;
+}
+.header img {
+  width: 30px;
+  margin: 10px 30px;
 }
 .ava {
   width: 300px;

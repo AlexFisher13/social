@@ -3,21 +3,11 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div className="col-3 bg-dark2 navbar">
-            <div className="row">
-                <a href="profile">Profile</a>
-            </div>
-            <div className="row">
-                <a href="dialogs">Messages</a>
-            </div>
-            <div className="row">
-                <a href="news">News</a>
-            </div>
-            <div className="row">
-                <a href="music">Music</a>
-            </div>
-            <div className="row">
-                <a href="settings">Settings</a>
-            </div>
+            <a className="row" href="profile">Profile</a>
+            <a className="row" href="dialogs">Messages</a>
+            <a className="row" href="news">News</a>
+            <a className="row" href="music">Music</a>
+            <a className="row" href="settings">Settings</a>
         </div>
     )
 }
