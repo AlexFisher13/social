@@ -4,13 +4,19 @@ const Navbar = () => {
     return (
         <div className="col-3 bg-dark2 navbar">
             <div className="row">
-                <a href="">Profile</a>
+                <a href="profile">Profile</a>
             </div>
             <div className="row">
-                <a href="">Messages</a>
+                <a href="dialogs">Messages</a>
             </div>
             <div className="row">
-                <a href="">Music</a>
+                <a href="news">News</a>
+            </div>
+            <div className="row">
+                <a href="music">Music</a>
+            </div>
+            <div className="row">
+                <a href="settings">Settings</a>
             </div>
         </div>
     )
