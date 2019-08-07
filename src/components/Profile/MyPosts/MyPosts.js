@@ -3,7 +3,7 @@ import Post from "./Post/Post";
 
 const MyPost = () => {
     return (
-        <div>Блог
+        <div>
             <Post message='Hello'/>
             <Post message='Yahooo'/>
             <Post message='My First Post'/>

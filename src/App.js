@@ -2,14 +2,16 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
+import Dialogs from "./components/Dialogs/Dialogs";
 
 function App() {
   return (
     <div className="App container">
-        <Header className="Header" />
+        <Header />
         <div className="row">
-            <Navbar className="Navbar" />
-            <Profile className="Profile" />
+            <Navbar />
+            {/*<Profile />*/}
+            <Dialogs/>
         </div>
     </div>
   );
