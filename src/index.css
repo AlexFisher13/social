@@ -30,6 +30,7 @@ a:hover {
 .navbar a:hover {
   background-color: #72797f;
 }
+
 .header img {
   width: 30px;
   margin: 10px 30px;
@@ -50,10 +51,29 @@ a:hover {
 .bg-dark4 {
   background-color: #9a9da0;
 }
+
 .post-ava {
   width: 100px;
   border-radius: 50%;
 }
 .info {
   margin: 15px 0;
+}
+.dialogs div {
+  margin-top: 20px;
+}
+form {
+  margin-bottom: 20px;
+}
+form input {
+  width: 400px;
+  margin-right: 20px;
+}
+button {
+  border: 0;
+  height: 20px;
+  outline: none;
+}
+button:hover {
+  background-color: #9a9da0;
 }
