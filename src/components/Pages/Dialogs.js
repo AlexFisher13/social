@@ -12,22 +12,36 @@ const Message = (props) => {
     return <div>
         <p>{props.text}</p>
     </div>
-}
+};
+
+let dialogBase = [
+    {name: "Conor McGregor"},
+    {name: "Henry Sekhydo"},
+    {name: "John Johns"},
+    {name: "Daniel Kormie"}
+];
+
+let messageBase = [
+    {text: "I'm fine, and you?"},
+    {text: "Hey how are you?"},
+    {text: "Hello"}
+];
 
 const Dialogs = () => {
     return (
         <div className="col-9 bg-dark3">
             <div className="row">
                 <div className="col-3 dialogs">
-                    <DialogItem name="Conor McGregor"/>
-                    <DialogItem name="Henry Sekhydo"/>
-                    <DialogItem name="John Johns"/>
-                    <DialogItem name="Daniel Kormie"/>
+                    {
+                        dialogBase.map((el) =>
+                            <DialogItem name={el.name}/>
+                        )}
                 </div>
                 <div className="col-9 messages">
-                    <Message text="I'm fine, and you?" />
-                    <Message text="Hey how are you?" />
-                    <Message text="Hello" />
+                    {
+                        messageBase.map((el) =>
+                            <Message text={el.text}/>
+                        )}
                 </div>
             </div>
         </div>
