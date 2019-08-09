@@ -1,15 +1,16 @@
 import React from 'react';
 import Post from "./Post/Post";
 
-const MyPosts = () => {
+const MyPosts = (props) => {
     return <div className="col-12">
         <form>
             <input type="text"/>
             <button>Добавить пост</button>
         </form>
-        <Post message='Hello'/>
-        <Post message='Yahooo'/>
-        <Post message='My First Post'/>
+        {
+            props.posts.map(el =>
+            <Post message={el.message} />)
+        }
     </div>
-}
+};
 export default MyPosts;
